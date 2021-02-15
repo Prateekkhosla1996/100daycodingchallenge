@@ -119,4 +119,19 @@ public class LinkedList {
 			size++;
 		}
 	}
+	public int removeFirst() throws Exception{
+		if(size==0) {
+			throw new Exception("LL is empty");
+		}
+		int remove = head.data;
+		if(this.size==1) {
+			this.head=null;
+			this.tail=null;
+			size=0;
+		}else {
+			this.head=head.next;
+			size--;
+		}
+		return remove;
+	}
 }
