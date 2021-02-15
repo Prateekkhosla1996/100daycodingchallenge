@@ -134,4 +134,31 @@ public class LinkedList {
 		}
 		return remove;
 	}
+	
+	public int removeLast()  throws Exception{
+		if(size==0) {
+			throw new Exception("LL is empty");
+		}
+		int remove = tail.data;
+		if(size==1) {
+			head=null;
+			tail=null;
+			size=0;
+		}else {
+			Node lastminusone = getNodeAt(size-2);
+			tail=lastminusone;
+			tail.next=null;
+			size--;
+		}
+		return remove;
+	}
+	public int mid() {
+		Node slow=this.head;
+		Node fast=this.head;
+		while(fast.next!=null&&fast.next.next!=null) {
+			slow=slow.next;
+			fast=fast.next.next;
+		}
+		return slow.data;
+	}
 }

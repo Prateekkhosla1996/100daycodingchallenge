@@ -17,14 +17,15 @@ public class LinkedListClient {
 		ll.addAt(2, 66);
 		System.out.println();
 		System.out.println(ll.removeFirst());
-		System.out.println(ll.removeFirst());
+		System.out.println(ll.removeLast());
 		ll.display();
 		System.out.println();
 		System.out.println("this is head-> "+ll.getFirst());
 		System.out.println("this is tail-> "+ll.getLast());
 //		System.out.println("index data-> "+ll.getAt(7));
 		System.out.println(ll.getNodeAt(2));
+		System.out.println(ll.mid());
 		
 	}
-//	6770bb2d7998414cd6635c1cbde1468efecd00f9
+//	
 }
