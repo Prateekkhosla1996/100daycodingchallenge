@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import Accordion from './Accordion';
 import Search from './Search';
 import Dropdown from './Dropdown';
-import Translate from './Translate'
+import Translate from './Translate';
+import Route from './Route';
+import Header from './Header';
 const items=[
     {
         id:1,
@@ -60,18 +62,28 @@ const showTranslate = () => {
     }
 }
 const App = ()=>{
-    // const [count,setCount]=useState(0);
-    // const counterIncrement=()=>{
-    //     setCount(count+1);
-    //     console.log(`clicked ${count}`)
-    // }
+    
     const[selected,setSelected]=useState(options[0]);
     return(
         <div className="ui container">
-             {showAccordion()}
-                {showList()}
-                {showDropdown()}
-                {showTranslate()}
+            <Header/>
+             <Route path="/">
+                 <Accordion items={items}/>
+             </Route>
+             <Route path="/list">
+                 <Search/>
+             </Route>
+             <Route path='/dropdown'>
+                 <Dropdown
+                 label="Select a Color"
+                 options={options}
+                 selected={selected}
+                 onSelectedChange={setSelected}
+                 />
+             </Route>
+             <Route path="/translate">
+                <Translate/>
+             </Route>
         </div>
     )
 }
