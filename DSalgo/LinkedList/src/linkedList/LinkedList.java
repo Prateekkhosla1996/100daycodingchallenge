@@ -162,16 +162,39 @@ public class LinkedList {
 		return slow.data;
 	}
 	
-//	public Node mergedTwoSortedLinkedList(LinkedList l1,LinkedList l2) {
-//		Node merged = new Node();
-//		Node one=l1.head;
-//		Node two=l2.head;
-//		while(one!=null&&two!=null) {
-//			if(one.data<two.data) {
-//				merged=one;
-//				
-//			}
-//		}
-//		return merged;
-//	}
+	public LinkedList mergedTwoSortedLinkedList(LinkedList l1,LinkedList l2) {
+		LinkedList merged = new LinkedList();
+		Node one=l1.head;
+		Node two=l2.head;
+		while(one!=null&&two!=null) {
+			if(one.data<two.data) {
+				merged.addLast(one.data);
+				one=one.next;
+			}else {
+				merged.addLast(two.data);
+				one=one.next;
+			}
+		}
+		while(one!=null) {
+			merged.addLast(one.data);
+			one=one.next;
+		}
+		while(two!=null) {
+			merged.addLast(two.data);
+			two=two.next;
+		}
+		return merged;
+	}
+	public int kthFromLast(int k) {
+		Node fast=head;
+		Node slow=head;
+		for(int i=0;i<k;i++) {
+			fast=fast.next;
+		}
+		while(fast!=tail) {
+			fast=fast.next;
+			slow=slow.next;
+		}
+		return slow.data;
+	}
 }

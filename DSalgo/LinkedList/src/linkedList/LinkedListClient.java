@@ -5,16 +5,23 @@ public class LinkedListClient {
 	public static void main(String[] args) throws Exception {  
 		// TODO Auto-generated method stub
 		LinkedList ll = new LinkedList();
-		ll.addFirst(10);
-		ll.addFirst(20);
-		ll.addFirst(30);
-		ll.addFirst(40);
-		ll.addFirst(50);
-		ll.addLast(60);
+		LinkedList l2 = new LinkedList();
+		
+		ll.addLast(10);
+		l2.addLast(20);
+		ll.addLast(30);
+		l2.addLast(40);
+		ll.addLast(50);
+		l2.addLast(60);
 		ll.addLast(70);
-		ll.addLast(80);
+		l2.addLast(80);
+		ll.addLast(90);
+		l2.addLast(100);
+		ll.addLast(110);
 		ll.display();
-		ll.addAt(2, 66);
+		System.out.println();
+//		ll.addAt(2, 66);
+		l2.display();
 		System.out.println();
 		System.out.println(ll.removeFirst());
 		System.out.println(ll.removeLast());
@@ -25,6 +32,7 @@ public class LinkedListClient {
 //		System.out.println("index data-> "+ll.getAt(7));
 		System.out.println(ll.getNodeAt(2));
 		System.out.println(ll.mid());
+		System.out.println(ll.kthFromLast(3));
 		
 	}
 //	
