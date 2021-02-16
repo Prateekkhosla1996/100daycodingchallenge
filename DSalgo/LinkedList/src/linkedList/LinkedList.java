@@ -161,4 +161,17 @@ public class LinkedList {
 		}
 		return slow.data;
 	}
+	
+//	public Node mergedTwoSortedLinkedList(LinkedList l1,LinkedList l2) {
+//		Node merged = new Node();
+//		Node one=l1.head;
+//		Node two=l2.head;
+//		while(one!=null&&two!=null) {
+//			if(one.data<two.data) {
+//				merged=one;
+//				
+//			}
+//		}
+//		return merged;
+//	}
 }
