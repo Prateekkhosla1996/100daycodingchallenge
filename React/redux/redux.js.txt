@@ -1,0 +1,28 @@
+import * as redux from "https://cdn.skypack.dev/redux@4.0.5";
+console.clear();
+//people dropping off a form(Action creator)
+const createPolicy=(name, amount)=>{
+  return{//Action
+  type:'CREATE_POLICY',
+  payload:{
+  name,amount
+  }
+};
+};
+const deletePolicy = (name)=>{
+  return{
+    type:'DEPETE_POLICY',
+    payload:{
+      name:name
+    }
+  };
+}
+const createClaim=(name,amountToCollect)=>{
+  return{
+    type:'CREATE_CLAIM',
+    payload:{
+      name:name,
+      amountToCollect:amountTocollect
+    }
+  }
+}
