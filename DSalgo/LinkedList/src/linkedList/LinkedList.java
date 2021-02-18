@@ -197,4 +197,26 @@ public class LinkedList {
 		}
 		return slow.data;
 	}
+	private Node getNodeAt2(int idx){
+        Node temp = head;
+        for(int i=0; i<idx;i++){
+            temp=temp.next;
+        }
+        return temp;
+    }
+	public void reverseDI() {
+	      int li=0;
+	      int ri=size-1;
+	      while(li<=ri){
+	          Node left = getNodeAt2(li);
+	          Node right = getNodeAt2(ri);
+	          int temp = left.data;
+	          left.data=right.data;
+	          right.data=temp;
+	          li++;
+	          ri--;
+	      }
+	    }
+	
+	
 }
