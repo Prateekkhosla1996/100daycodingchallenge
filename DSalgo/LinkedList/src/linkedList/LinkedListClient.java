@@ -33,7 +33,7 @@ public class LinkedListClient {
 		System.out.println(ll.getNodeAt(2));
 		System.out.println(ll.mid());
 		System.out.println(ll.kthFromLast(3));
-		
+//		System.out.println(ll.getFirst());
 	}
 //	
 }
