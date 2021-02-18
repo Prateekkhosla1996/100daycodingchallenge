@@ -26,3 +26,20 @@ const createClaim=(name,amountToCollect)=>{
     }
   }
 }
+//Reducers(Departments!)
+const claimHistory = (oldListOfclaims=[], action) =>{
+  if(action.type==='CREATE_CLAIM'){
+    return [...oldListOfClaims,action.payload];
+  }
+  //we dont care the action
+  return oldListOfClaims;
+}
+const accounting = (bagofmoney=[], action)=>{
+  
+    if(action.type==='CREATE_CLAIM'){
+      return bagofmoney=action.payload.amount.ammountToCollect;
+    }else if(action.tyle==='CREATE_POLICY'){
+      return bagofmoney+action.payload.amount;
+    }
+  return bagofmoney;
+}
