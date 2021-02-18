@@ -233,6 +233,54 @@ public class LinkedList {
 	      head=tail;
 	      tail=temp;
 	    }
-	  
+	public static LinkedList mergeTwoSortedLists(LinkedList l1, LinkedList l2) {
+	      LinkedList ml = new LinkedList();
+
+	      Node one = l1.head;
+	      Node two = l2.head;
+	      while (one != null && two != null) {
+	        if (one.data < two.data) {
+	          ml.addLast(one.data);
+	          one = one.next;
+	        } else {
+	          ml.addLast(two.data);
+	          two = two.next;
+	        }
+	      }
+
+	      while (one != null) {
+	        ml.addLast(one.data);
+	        one = one.next;
+	      }
+
+	      while (two != null) {
+	        ml.addLast(two.data);
+	        two = two.next;
+	      }
+
+	      return ml;
+	    }
+	public static Node midNode(Node head, Node tail){
+	    Node f = head;
+	    Node s = head;
+	    while(f!=tail&&f.next!=tail){
+	        f=f.next.next;
+	        s=s.next;
+	    }
+	    return s;
+	}
+	    public static LinkedList mergeSort(Node head, Node tail){
+	      // write your code here
+	      if(head==tail){
+	          LinkedList br =new LinkedList();
+	          br.addLast(head.data);
+	          return br;
+	      }
+	      Node mid = midNode(head,tail);
+	      LinkedList left=mergeSort(head,mid);
+	      LinkedList right=mergeSort(mid.next,tail);
+	      LinkedList res= mergeTwoSortedLists(left,right);
+	      return res;
+	    }
 	
 }
