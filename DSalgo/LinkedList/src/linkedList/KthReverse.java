@@ -1,7 +1,8 @@
 package linkedList;
 import java.io.*;
 import java.util.*;
-public class ReverseLLRECData {
+
+public class KthReverse {
   public static class Node {
     int data;
     Node next;
@@ -36,41 +37,6 @@ public class ReverseLLRECData {
         System.out.print(temp.data + " ");
       }
       System.out.println();
-    }
-    public void kReverse(int k) {
-        // write your code here
-        LinkedList prev = null;
-        
-        while(this.size>0){
-            LinkedList curr = new LinkedList();
-            if(this.size>=k){
-            for(int i=0;i<k;i++){
-                int val = this.getFirst();
-                this.removeFirst();
-                curr.addFirst(val);
-            }
-                
-            }else{
-                int os = this.size();
-                for(int i=0;i<os;i++){
-                int val = this.getFirst();
-                this.removeFirst();
-                curr.addLast(val);
-            }
-            }
-            if(prev==null){
-                prev=curr;
-            }else{
-                prev.tail.next=curr.head;
-                prev.tail=curr.tail;
-                prev.size+=curr.size;
-            }
-
-        }
-                 this.head=prev.head;
-        this.tail=prev.tail;
-        this.size=prev.size;     
-      
     }
 
     public void removeFirst() {
@@ -363,21 +329,42 @@ public class ReverseLLRECData {
         this.size = even.size;
       }
     }
+ public void kReverse(int k) {
+        // write your code here
+        LinkedList prev = null;
+        
+        while(this.size>0){
+            LinkedList curr = new LinkedList();
+            if(this.size>=k){
+            for(int i=0;i<k;i++){
+                int val = this.getFirst();
+                this.removeFirst();
+                curr.addFirst(val);
+            }
+                
+            }else{
+                int os = this.size();
+                for(int i=0;i<os;i++){
+                int val = this.getFirst();
+                this.removeFirst();
+                curr.addLast(val);
+            }
+            }
+            if(prev==null){
+                prev=curr;
+            }else{
+                prev.tail.next=curr.head;
+                prev.tail=curr.tail;
+                prev.size+=curr.size;
+            }
 
-
-    private void displayReverseHelper(Node node){
-      // write your code here
-      if(node==null){
-          return;
-      }
-      displayReverseHelper(node.next);
-      System.out.print(node.data+" ");
+        }
+                 this.head=prev.head;
+        this.tail=prev.tail;
+        this.size=prev.size;     
+      
     }
 
-    public void displayReverse(){
-      displayReverseHelper(head);
-      System.out.println();
-    }
   }
 
   public static void main(String[] args) throws Exception {
@@ -390,14 +377,16 @@ public class ReverseLLRECData {
       int d = Integer.parseInt(values1[i]);
       l1.addLast(d);
     }
-    
+
+    int k = Integer.parseInt(br.readLine());
     int a = Integer.parseInt(br.readLine());
     int b = Integer.parseInt(br.readLine());
 
     l1.display();
-    l1.displayReverse();
-    l1.addLast(a);
-    l1.addFirst(b);
+    l1.kReverse(k);
+    l1.display();
+    l1.addFirst(a);
+    l1.addLast(b);
     l1.display();
   }
 }
