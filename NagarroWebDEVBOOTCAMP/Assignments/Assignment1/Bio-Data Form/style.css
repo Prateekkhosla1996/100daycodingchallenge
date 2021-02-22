@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.container {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+
+}
+input::placeholder{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    border: none;
+    padding: 18px 26px;
+    background-color: green;
+    color: honeydew;
+    margin-right: 1rem;
+    border-radius: 6px;
+}
+.reset{
+    border: none;
+    padding: 18px 26px;
+    background-color: red;
+    color: honeydew;
+    margin-right: 1rem;
+    border-radius: 6px;
+}
