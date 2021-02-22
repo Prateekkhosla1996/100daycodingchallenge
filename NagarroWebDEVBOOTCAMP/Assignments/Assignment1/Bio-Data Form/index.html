@@ -14,9 +14,9 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label for="firstname">FirstName: </label>
-            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
             <label for="lastname">LastName: </label>
-            <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br><br>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br><br>
             <label for="male">Male:</label>
             <input type="radio" name="gender" id="male">
             <label for="female">Female:</label>
@@ -24,27 +24,27 @@
             <label for="others">Others:</label>
             <input type="radio" name="gender" id="others">
             <br><br>
-            <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob">
+            <label for="dob" >Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
             <br><br>
     
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
             <br><br>
             <label for="tel">Phone:</label>
-            <input type="tel" name="tel" id="tel" placeholder="+91">
+            <input type="tel" name="tel" id="tel" placeholder="+91" required>
             <br><br>
             <label for="hight">Height:</label>
-            <input type="number" name="hight" id="hight" placeholder="Height in Feet">
+            <input type="number"required name="hight" id="hight" placeholder="Height in Feet">
         </fieldset>
         <br>
         <fieldset>
             <legend>Education</legend>
             <label for="school">School Name: </label>
-            <input type="text" name="school" id="school" placeholder="School Name">
+            <input type="text" name="school" id="school" placeholder="School Name" required>
             <br><br>
             <label for="class">Class: </label>
-            <input type="text" name="class" id="class"placeholder="Enter Class">
+            <input type="text" name="class" id="class"placeholder="Enter Class" required>
             <br><br>
             <label for="stream">Stream</label>
             <select name="strean" id="stream">
@@ -55,7 +55,7 @@
             </select>
             <br><br>
             <label for="mark">Marksheet:</label>
-            <input type="file" name="mark" id="mark">
+            <input type="file" name="mark" id="mark" required>
         </fieldset>
         <br>
         <div class="btn-container">
