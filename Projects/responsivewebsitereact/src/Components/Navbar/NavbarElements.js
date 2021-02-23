@@ -20,6 +20,7 @@ z-index: 10;
 
 export const NavbarContainer = styled.div`
 display: flex;
+
 justify-content: space-between;
 height: 80px;
 z-index: 1;
@@ -37,6 +38,8 @@ align-items: center;
 margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
+
+
 `
 export const MobileIcon=styled.div`
     display:none;
@@ -52,6 +55,8 @@ export const MobileIcon=styled.div`
     }
 `
 export const NavMenu=styled.ul`
+
+        margin-top:50px;
         display:flex;
         justify-content:center;
         align-items:center;
