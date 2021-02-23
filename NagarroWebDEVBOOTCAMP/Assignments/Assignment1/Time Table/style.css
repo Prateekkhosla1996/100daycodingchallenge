@@ -1,0 +1,27 @@
+*{
+    background-color: lightgreen;
+    color: honeydew;
+    font-family: sans-serif;
+}
+
+th{
+    background-color: limegreen;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+td{
+    background-color: lime;
+    font-size: 16px;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
