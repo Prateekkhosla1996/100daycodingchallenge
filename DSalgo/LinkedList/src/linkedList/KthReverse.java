@@ -359,7 +359,7 @@ public class KthReverse {
             }
 
         }
-                 this.head=prev.head;
+         this.head=prev.head;
         this.tail=prev.tail;
         this.size=prev.size;     
       
