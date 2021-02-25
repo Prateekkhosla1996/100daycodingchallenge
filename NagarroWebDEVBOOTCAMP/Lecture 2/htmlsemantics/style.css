@@ -1,3 +1,9 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav{
     display:flex;
     flex-direction: row;
@@ -6,7 +12,7 @@ nav{
     justify-content: center;
     height: 80px;
     font-family: sans-serif;
-
+    position: relative;
 }
 .nav-logo{
     float: left;
@@ -55,6 +61,42 @@ nav ul button:hover{
     box-shadow: 0px 0px 2px 2px lightgray;
     transition: 0.4s ease-in;
 }
+    @media screen and (max-width:1034px){
+        nav ul li{
+            /* letter-spacing: 0.1rem; */
+            padding: 5px ;
+            font-size: 13px;
+        }
+        
+        nav ul{
+            width: 70vw;
+            text-decoration: none;
+            display:flex;
+            justify-content: space-around;
+            align-content: center;
+            
+        }
+        nav ul button{
+    
+            border:none;
+            font-size: medium;
+            padding:10px 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            font-weight: 600;
+            margin:auto 0;
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+        }
+        nav ul button:hover{
+            color:orange ;
+            background-color:  whitesmoke;
+            box-shadow: 0px 0px 2px 2px lightgray;
+            transition: 0.4s ease-in;
+        }
+    }
 @media screen and (max-width:678px){
     nav ul{
      display:none;
