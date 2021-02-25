@@ -1,0 +1,62 @@
+nav{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    font-family: sans-serif;
+
+}
+.nav-logo{
+    float: left;
+    position: relative;
+    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li{
+    list-style-type:none;
+    letter-spacing: 0.1rem;
+    padding: 5px ;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+nav ul{
+    width: 60vw;
+    
+    text-decoration: none;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+nav ul button{
+    border:none;
+    font-size: larger;
+    padding:15px 30px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    margin:auto 0;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+nav ul button:hover{
+    color:orange ;
+    background-color:  whitesmoke;
+    box-shadow: 0px 0px 2px 2px lightgray;
+    transition: 0.4s ease-in;
+}
+@media screen and (max-width:678px){
+    nav ul{
+     display:none;
+    }
+}
