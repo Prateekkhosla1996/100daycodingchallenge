@@ -1,0 +1,11 @@
+ul>li{
+    border-top: 1px solid black;
+}
+/* adjecet selectors */
+h4 + p{
+    background-color: crimson;
+    color: cornflowerblue;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    font-size: 24px ;
+}
