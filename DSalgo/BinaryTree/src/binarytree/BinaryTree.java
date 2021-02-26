@@ -8,7 +8,6 @@ public class BinaryTree {
 		int data;
 		Node left;
 		Node right;
-	
 	}
 	private Node root;
 	
@@ -18,6 +17,12 @@ public class BinaryTree {
 
 	private Node takeInput(Node parent, boolean ilc) {
 		// TODO Auto-generated method stub
+		/**
+		 * if hlc is true that means we want to create left child
+		 * if hrc is false that means we want to create right child
+		 * hlc stands for has left child
+		 * hrc stands for has right child 
+		 * **/
 		if(parent==null) {
 			System.out.println("enter the data for root node ?");
 		}else {
@@ -55,12 +60,13 @@ public class BinaryTree {
 		if(node.left==null) {
 			str+=".";
 		}else {
-			str+="->"+node.left.data+"<-";
+			str+=node.left.data;
 		}
+		str+="->"+node.data+"<-";
 		if(node.right==null) {
 			str+=".";
 		}else {
-			str+="->"+node.right.data+"<-";
+			str+=node.right.data;
 		}
 		System.out.println(str);
 		display(node.left);
@@ -99,5 +105,16 @@ public class BinaryTree {
 		postorder(node.left);
 		postorder(node.right);
 		System.out.println(node.data);
+	}
+	public int height() {
+		return height(root);
+	}
+	private int height(Node node) {
+		if(node==null) {
+			return -1;
+		}
+		int lh=height(node.left);
+		int rh=height(node.left);
+		return Math.max(lh, rh)+1;
 	}
 }
