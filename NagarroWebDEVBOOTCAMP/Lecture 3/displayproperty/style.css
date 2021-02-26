@@ -1,0 +1,9 @@
+h1{
+    border: 2px solid black;
+    color: wheat;
+    background-color: orangered;
+    display: inline;
+}
+span{
+    display: block;
+}

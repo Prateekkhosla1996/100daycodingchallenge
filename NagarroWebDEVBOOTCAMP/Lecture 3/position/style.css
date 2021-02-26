@@ -1,0 +1,25 @@
+div{
+    border:1px solid black;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: lightgreen;
+    
+}
+#middle{
+    background-color: lawngreen;
+    position: static;
+    top: 100px;
+    left: 200px;
+}
+#relativemid{
+    background-color: olivedrab;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+#absolutemid{
+    background-color: blue;
+    position: absolute;
+
+}
