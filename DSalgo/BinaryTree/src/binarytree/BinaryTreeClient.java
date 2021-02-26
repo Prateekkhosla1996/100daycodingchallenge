@@ -10,6 +10,8 @@ public class BinaryTreeClient {
 		System.out.println(bt.height());
 		System.out.println(bt.diameter());
 		System.out.println(bt.diameter2());
+		bt.mirror();
+		bt.display();
 	}
 
 }

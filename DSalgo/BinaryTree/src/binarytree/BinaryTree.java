@@ -149,5 +149,18 @@ public class BinaryTree {
 		int sd = height(node.left)+height(node.right)+2;
 		return Math.max(sd, Math.max(ld,rd));
 	}
+	public void mirror() {
+		root=mirrorHelper(root);
+	}
+	private Node mirrorHelper(Node node) {
+		if(node == null) {
+			return node;
+		}
+		Node left =mirrorHelper(node.left);
+		Node right =mirrorHelper(node.right);
+		node.left=right;
+		node.right=left;
+		return node;
+	}
 }
  
