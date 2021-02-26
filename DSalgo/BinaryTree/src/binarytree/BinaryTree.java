@@ -117,4 +117,37 @@ public class BinaryTree {
 		int rh=height(node.left);
 		return Math.max(lh, rh)+1;
 	}
+	int diameterans =Integer.MIN_VALUE;
+	public int diameter() {
+		diameter(root);
+		return diameterans;
+	}
+
+	private void diameter(Node root2) {
+		if(root2==null) {
+			return;
+		}
+		int presentnodeRoot = height(root2.left)+height(root2.left)+2;
+		if(presentnodeRoot>diameterans) {
+			diameterans=presentnodeRoot;
+		}
+		diameter(root2.left);
+		diameter(root2.right);
+	}
+	public int diameter2() {
+		return diameter2(root);
+	}
+	private int diameter2(Node node) {
+		if(node==null) {
+			return 0;
+		}
+		//max distance between 2 nodes might lie in left subtree
+		int ld = diameter2(node.left);
+		//max distance between 2 nodes might lie in right subtree
+		int rd = diameter2(node.right);
+		// self node might be the root node of diameter
+		int sd = height(node.left)+height(node.right)+2;
+		return Math.max(sd, Math.max(ld,rd));
+	}
 }
+ 
