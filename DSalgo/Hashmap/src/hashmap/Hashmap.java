@@ -1,6 +1,7 @@
 package hashmap;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class Hashmap {
 
@@ -18,7 +19,11 @@ public class Hashmap {
 		System.out.println(hm);
 		System.out.println(hm.containsKey("USA"));
 		System.out.println(hm.containsKey("NULL"));
-		
+		Set<String> keys = hm.keySet();
+		for(String key:hm.keySet()) {
+			Integer val = hm.get(key);
+			System.out.println(key+" "+val);
+		}
 	}
 
 }
