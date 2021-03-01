@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategrey;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+nav ul li {
+    
+    display: inline;
+}
+nav ul li a{
+    color: white;
+    font-size: 2rem;
+    padding: 1.2rem;
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+}
