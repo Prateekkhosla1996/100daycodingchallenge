@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: darkslategrey;
     height: 80px;
     position: fixed;
@@ -14,14 +11,45 @@ nav{
 }
 nav ul li {
     
-    display: inline;
+    display: inline-block;
+
 }
 nav ul li a{
     color: white;
     font-size: 2rem;
-    padding: 1.2rem;
+    padding: 0.5rem;
     text-decoration: none;
 }
 nav ul{
     list-style-type: none;
+}
+
+nav ul li ul li{
+    display: none;
+    position: absolute;
+
+}
+
+nav ul li:hover  ul li{
+    display: block;
+    background-color: aliceblue;
+    
+}
+
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3px 4px 1px red;
+}
+article{
+    width: 70%;
+    border: 1px solid black;
+    
+}
+article p{
+    height: 80px;
+    /* white-space: nowrap; */
+    overflow: scroll;
+    text-overflow:clip;
 }
