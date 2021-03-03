@@ -16,3 +16,11 @@
         text-transform: capitalize;
     }
 }
+
+@media screen and (max-width:1024px),(orientation:landscapr){
+    h1{
+        
+        text-transform: capitalize;
+    text-decoration: underline;
+}
+}
