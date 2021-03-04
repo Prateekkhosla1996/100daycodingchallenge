@@ -9,23 +9,29 @@ body{
     align-items: center;
     align-self: center;
     background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1604346782646-13dac014c258?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 button{
     margin-top: 100px;
     border-radius: 0;
-    border :1px solid #ccc;
+    border :2px solid #ccc;
     padding: 12px 24px;
     background-color: transparent;
-    transform: all 0.4s;
     font-size: medium;
     font-weight: 500;
-    color: white;
+    color: #ccc;
 }
 button:active{
     border: none;
 }
 button:hover{
-    transform: all 0.4s;
-    box-shadow: 12px 12px 2px 1px aqua;
+    color: white;
+    transition:  ease-in 0.2s;
+    border: 2px solid  white;
+    box-shadow: 4px 4px 2px 1px aqua;
     transform: translateY(-5px);
 }
