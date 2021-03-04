@@ -14,25 +14,26 @@ body{
     height: 100vh;
     background-size: 100% 100%;
     background-attachment: fixed;
+    font-family: sans-serif;
 }
 button{
     margin-top: 100px;
     border-radius: 0;
-    border :2px solid #ccc;
+    border :3px solid  #003049;
     padding: 12px 24px;
     background-color: transparent;
     font-size: medium;
-    font-weight: 500;
-    color: #ccc;
+    font-weight: 600;
+    color: #003049;
 }
 button:active{
     border: none;
 }
 button:hover{
-    color: white;
-    transition:  ease-in 0.2s;
-    border: 2px solid  white;
+    color: lightsalmon;
+    transition:  ease-in 0.3s;
+    border: 2px solid ;
     /* box-shadow: 5px 4px 2px 1px aqua; */
-    box-shadow: 0 8px 6px -6px aqua;
+    box-shadow: 0 8px 6px -6px #e63946;
     transform: translateY(-5px);
 }
