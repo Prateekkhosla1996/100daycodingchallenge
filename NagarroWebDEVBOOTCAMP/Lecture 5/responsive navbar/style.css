@@ -33,8 +33,5 @@ nav {
         justify-content: space-evenly;
         height: 300px;
     }
-    ul li a{
-        padding-top:5px ;
-        margin-top: 2px;
-    }
+ 
 }
