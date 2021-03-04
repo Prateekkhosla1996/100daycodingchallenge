@@ -8,22 +8,24 @@ body{
     justify-content: center;
     align-items: center;
     align-self: center;
+    background-color: black;
 }
 button{
     margin-top: 100px;
     border-radius: 0;
-    border :none;
+    border :1px solid #ccc;
     padding: 12px 24px;
     background-color: transparent;
     transform: all 0.4s;
     font-size: medium;
     font-weight: 500;
+    color: white;
 }
 button:active{
     border: none;
 }
 button:hover{
     transform: all 0.4s;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 12px 12px 2px 1px aqua;
     transform: translateY(-5px);
 }
