@@ -1,0 +1,19 @@
+div{
+    height: 200px;
+    width: 200px;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation:gravity 1s infinite alternate;
+    animation-timing-function: ease-in;
+    background-color: chartreuse;
+}
+
+@keyframes gravity{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(395px);
+    }
+}
