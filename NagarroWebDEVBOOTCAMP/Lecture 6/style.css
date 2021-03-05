@@ -1,0 +1,40 @@
+div{
+    width: 300px;
+    height: 30px;
+    border:1px solid black;
+    animation-name: swing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    transition: all 0.2s;
+
+}
+/* @keyframes swing{
+    from{
+        height: 30px;
+    }
+    to{
+        height: 700px;
+    }
+} */
+@keyframes swing{
+    0%{
+        height: 30px;
+        background-color: antiquewhite;
+    }
+    25%{
+        height: 100px;
+        background-color: blueviolet;
+    }
+    50%{
+        height: 300px;
+        background-color: gold;
+    }
+    75%{
+        height: 500px;
+        background-color: palegreen;
+    }
+    100%{
+    height: 300px;
+    }
+}
