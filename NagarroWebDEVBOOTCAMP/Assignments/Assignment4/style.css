@@ -55,7 +55,7 @@ nav .btn{
         flex-direction: column;
        justify-content: center;
        align-items: center;
-        height: 55vh;
+        height: 45vh;
     }
     ul{
         display: flex;
@@ -63,7 +63,7 @@ nav .btn{
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
-        height: 80vh;
+        height: 70vh;
     }
     .button-li{
      
@@ -79,13 +79,52 @@ nav .btn{
 /* nav bar ended */
 
 /* carousel started  */
-
+#bg_carousel{
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background:url(https://images.unsplash.com/photo-1614935981447-893ce3858657?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    animation: changeBG 15s infinite;
+    transition: .4s ease-in;
+}
+@keyframes changeBG{
+    0%,100%{
+        background:url(https://images.unsplash.com/photo-1614935981447-893ce3858657?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat;
+        background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    }
+    25%{
+    background: url(https://images.unsplash.com/photo-1614926037384-4159c33e196b?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    50%{
+    background: url(https://images.unsplash.com/photo-1612566166300-fb3ce57b8f36?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat;
+    background-position: center;
+    
+    background-size: cover;
+    
+    }
+    75%{
+    background: url(https://images.unsplash.com/photo-1604346782646-13dac014c258?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    }
+}
 /* carousel ended  */
 
 /* cards started  */
-#bg_carousel{
-    height: 100vh;
-}
+
 #cards_container{
     /* margin-top: 200px; */
     padding: 10px;
