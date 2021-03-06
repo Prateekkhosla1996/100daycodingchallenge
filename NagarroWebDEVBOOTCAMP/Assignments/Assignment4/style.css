@@ -45,6 +45,30 @@ nav .btn{
     text-transform: uppercase;
 }
 
-
+@media screen and (max-width:678px){
+    nav{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        height: 55vh;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        height: 80vh;
+    }
+    .button-li{
+     
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+    nav .btn{
+        margin: 0px auto;
+    }
+}
 
 /* nav bar ended */
