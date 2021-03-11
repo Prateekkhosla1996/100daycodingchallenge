@@ -40,3 +40,6 @@ console.log([1,...str])
 console.log(str.toUpperCase())
 console.log(str.toLocaleLowerCase())
 console.log(str.toLocaleUpperCase())
+let n = "Hi There My Name is Prateek"
+
+console.log(n.split(" ").join(' ').toLocaleUpperCase())
