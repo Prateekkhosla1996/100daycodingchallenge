@@ -56,3 +56,11 @@ background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, F
     -webkit-text-fill-color: transparent;
   
 }
+nav ul li {
+    transition: ease-in .2s;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+ 
+}
