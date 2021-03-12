@@ -18,6 +18,12 @@ console.log(arr.splice(1,4,"red","blue","green","yellow"))
 console.log(arr.splice(2,1))
 
 console.log(arr);
+// split
+let url ='http://abc.com/song.mp3'
+console.log(url.split('/').pop());
+let str= "this is our string";
+console.log(str.split(' '));
+console.log(str.split(' ').join(', '));
 /**
  * 
 index.js:7 
@@ -34,4 +40,8 @@ index.js:16 (2) [10, 60]
 [60]
 index.js:18 ["blue"]
 index.js:20 (4) [10, "red", "green", "yellow"]
- */
+song.mp3
+index.js:25 (4) ["this", "is", "our", "string"]
+index.js:26 this, is, our, string
+
+*/
