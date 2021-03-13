@@ -214,5 +214,107 @@ nav ul li:hover{
 /* footer ended */
 
 /* education started */
+.timeline-divider{
+	position: absolute;
+	height: 75%;
+	width: 0;
+	border:3px dashed #0096fa6b;
+	left:50%;
+	top: 10px;
+
+}
+.timeline-traveller{
+	position: sticky;
+	top:25%;
+	transform: rotate(90deg);
+	z-index: 1;
+}
+.timeline-traveller i{
+	color: blue;
+}
+.skill-outer .skill-inner span{
+    padding: 5px;
+    font-weight: 700;
+}
+.eduh1{
+    font-size: 40px !important;
+}
+#education{
+    margin-top: -2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 2rem !important;
+}
+/* #education h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 3rem;
+    color: darkblue; 
+} */
+.timeline{
+	position: relative;
+	width: 75%;
+	/*border:2px solid black;*/
+}
+.timeline-box{
+	position: relative;
+	margin: 5PX;
+	width: 40%;
+	left: 5%;
+	min-height: 150PX;
+    border:none;
+    border-radius: 4px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 255, 0),orange,orangered);
+}
+.timeline-box h2{
+    margin: 3px 2px 1px 2px;
+    font-size: 26px;
+    color: navy;
+}
+.timeline-box h3{
+    margin: 3px 2px 1px 2px;
+    font-size: 19px;
+}
+.timeline-box p{
+    color: dimgray;
+    margin-bottom: 3px;
+}
+.timeline-box:nth-child(2n){
+	left:55%;
+}
+@media screen and (max-width: 600px){
+	.timeline-divider{
+		left:5%;
+	}
+	.timeline-box{
+		left:12% !important;
+		width: 80% 
+	}/*
+	.timeline-box:nth-child(2n){
+		left:12%; 
+		width: 80% 
+	}*/
+	/*.timeline-box:nth-child(2n+1)::after{
+		left:-12%;
+	}*/
+	.timeline-box::after{
+		left:-11.5% !important;
+    }
+    .social__media__footer{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+      
+    }
+   
+}
 
 /* education ended */
