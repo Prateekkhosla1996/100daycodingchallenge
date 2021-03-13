@@ -155,9 +155,9 @@ nav ul li:hover{
 #skills_section{
     width: 100%;
     height: 100%;
-    background-color:rgba(232, 232, 232, 0.2) ;
+    background-color:rgba(32, 146, 95, 0.2) ;
     padding-bottom: 5rem !important;
-
+    margin-top: -2rem !important;
 }
 .bg-purple{
     background-color: purple  !important;
@@ -167,6 +167,38 @@ nav ul li:hover{
 }
 .bg-darkblue{
     background-color: #073b4c !important ;
+}
+.fa-java{
+    color: darkblue;
+}
+.fa-database{
+    color: whitesmoke;
+}
+.fa-html5{
+    color: darkorange;
+   
+}
+.fa-css3{
+    color: blue;
+   
+}
+.fa-node{
+    background-color: olive;
+    color: white;
+    /* padding: 2px !important; */
+}
+.fa-react{
+    background-color: black;
+    color: lightblue;
+}
+.fa-js{
+    color: goldenrod;
+    
+}
+#skills_section h3{
+    font-size: 24px !important;
+    font-weight: 500;
+    color: #3e1f47;
 }
 /* skills ended */
 
@@ -240,7 +272,7 @@ nav ul li:hover{
     font-size: 40px !important;
 }
 #education{
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -249,6 +281,7 @@ nav ul li:hover{
     width: 100%;
     align-items: center;
     padding-bottom: 2rem !important;
+    background-color:rgba(232, 232, 232, 0.2);
 }
 /* #education h1{
     margin-top: 2rem;
@@ -271,20 +304,27 @@ nav ul li:hover{
     border:none;
     border-radius: 4px;
     text-align: center;
-    background-image: linear-gradient(to right, rgb(255, 255, 0),orange,orangered);
+    background: #D38312;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .timeline-box h2{
     margin: 3px 2px 1px 2px;
     font-size: 26px;
-    color: navy;
+    color:wheat;
+    font-weight: 400;
 }
 .timeline-box h3{
     margin: 3px 2px 1px 2px;
     font-size: 19px;
+    color: #fed9b7;
+    font-weight: 300;
 }
 .timeline-box p{
-    color: dimgray;
+    color: azure;
     margin-bottom: 3px;
+    font-weight: 300;
 }
 .timeline-box:nth-child(2n){
 	left:55%;
@@ -312,7 +352,7 @@ nav ul li:hover{
         text-align: center;
         display: flex;
         justify-content: space-evenly;
-      
+      padding-bottom: 2rem !important;
     }
    
 }
