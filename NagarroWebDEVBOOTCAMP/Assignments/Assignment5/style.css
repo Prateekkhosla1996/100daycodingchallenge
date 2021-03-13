@@ -140,4 +140,10 @@ nav ul li:hover{
     height: 100%;
     background-color:rgba(232, 232, 232, 0.2) ;
 }
+.bg-purple{
+    background-color: purple  !important;
+}
+.bg-neon{
+    background-color: greenyellow !important;
+}
 /* skills ended */
