@@ -68,6 +68,23 @@ nav ul li:hover{
     text-decoration: underline;
  
 }
+.social__media{
+    width: 200px;
+    height: 30px;
+    padding: 2px;
+    position: relative;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.social__media i{
+    color: darkslategray;
+    letter-spacing: 10px;
+    margin: 2px;
+}
+
 @media screen and (max-width:774px){
     #header_section .title h1{
         font-size: 40px;
@@ -152,3 +169,50 @@ nav ul li:hover{
     background-color: #073b4c !important ;
 }
 /* skills ended */
+
+/* footer started */
+#footer{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 2rem; */
+    /* background-image: linear-gradient(to right, darkblue, navy); */
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    overflow: hidden;
+    
+}
+
+.contact{
+    margin-top: 3rem;
+    width: 90%;
+    color: wheat  !important;
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.contact h5 a{
+    font-size: 18px;
+    color: wheat  !important;
+    
+}
+.contact p{
+    font-size: 16px;
+}
+.contact h2{
+    font-size: 28px;
+}
+
+.social__media__footer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.social__media__footer i{
+    color: wheat  !important;
+}
+/* footer ended */
+
+/* education started */
+
+/* education ended */
