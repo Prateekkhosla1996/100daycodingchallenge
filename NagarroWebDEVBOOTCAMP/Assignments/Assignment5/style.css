@@ -149,9 +149,7 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
     padding: 5px;
     text-align: justify;
 }
-#about_section .container{
-    /* margin-top: 4rem; */
-}
+
 @media screen and (max-width:774px){
     #about_section .container{
         margin-top: 1rem;
@@ -159,7 +157,7 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
     #about_section .container .row .col p{
         padding: 1px;
         text-align: justify;
-        margin-top: -10rem;
+        margin-top: -5rem !important;
     }
 }
 /* About ended */
@@ -185,7 +183,7 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
     color: darkblue;
 }
 .fa-database{
-    color: whitesmoke;
+    color: darkgray;
 }
 .fa-html5{
     color: darkorange;
@@ -194,6 +192,10 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
 .fa-css3{
     color: blue;
    
+}
+.info{
+    margin-top: 1rem !important;
+    padding: 2px;
 }
 .fa-node{
     background-color: olive;
