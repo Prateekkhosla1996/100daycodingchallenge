@@ -382,4 +382,17 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
 iframe{
     overflow: hidden !important;
 }
+.card h5{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+    padding: 1rem;
+}
+.card a{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+
+}
 /*project ended  */
