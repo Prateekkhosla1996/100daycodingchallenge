@@ -3,8 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
+    
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #4b6cb7;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
 }
 /* header started */
 #header_section{
@@ -146,8 +164,16 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
     margin-top: 1rem;
 }
 #about_section .container .row .col p{
+    
     padding: 5px;
+    padding-top: 10px;
     text-align: justify;
+}
+.details ul{
+    list-style-type: none;
+}
+.details ul li i{
+    color: #00F260;
 }
 
 @media screen and (max-width:774px){
@@ -351,14 +377,8 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
 	.timeline-box{
 		left:12% !important;
 		width: 80% 
-	}/*
-	.timeline-box:nth-child(2n){
-		left:12%; 
-		width: 80% 
-	}*/
-	/*.timeline-box:nth-child(2n+1)::after{
-		left:-12%;
-	}*/
+	}
+	
 	.timeline-box::after{
 		left:-11.5% !important;
     }
@@ -378,23 +398,37 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
 #project_section{
     width: 100%;
     height: 100%;
+    background-color:rgba(232, 232, 232, 0.2);
+    margin-top: -2rem;
+    
 }
 
 .card h5{
     text-align: center;
+    font-weight: 500;
+    color: #4b134f;
+    text-transform: uppercase;
 }
 .card p{
     text-align: center;
     padding: 1rem;
+   
 }
 .card a{
     display: block;
     width: 50%;
     margin: 1rem auto;
-
+    text-transform: uppercase;
 }
 .card img{
     width: 100% !important;
     height: 100% !important;
+}
+.card{
+    transition: 0.4s ease-in;
+}
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 /*project ended  */
