@@ -10,11 +10,20 @@ let p1 = Object.create(person)
 let p2 = Object.create(p1)
 
 
+let a =1.1;
 
 
 
-
-
+function outer(){
+    let a =10;
+    console.log("outer");
+    function inner(){
+        a++
+        console.log(a+" inner");
+    }
+    inner();
+}
+outer()
 
 
 
@@ -32,5 +41,5 @@ null
 person.__proto__
 {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
 person.__proto__.__proto__
-
+null
  */
