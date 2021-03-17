@@ -42,4 +42,19 @@ person.__proto__
 {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
 person.__proto__.__proto__
 null
+
+Object.prototype
+{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+Object.prototype.__proto__
+null
+String.prototype.__proto__==Object.prototype
+true
+String.prototype
+String {"", constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}
+String.prototype.__proto__
+{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+String.prototype.__proto__.__proto__
+null
+Number.prototype.__proto__==Object.prototype
+true
  */
