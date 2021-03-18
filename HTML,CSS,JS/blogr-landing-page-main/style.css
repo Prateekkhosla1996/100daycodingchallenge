@@ -1,5 +1,16 @@
+
+
+body{
+    color: white;
+}
+/* header started */
 nav ul{
     width: 100%;
+}
+.navbar-brand{
+    padding-bottom: 1rem !important;
+    padding-right: 1rem !important;
+    font-size: 32px !important;
 }
 nav .d-flex{
     width: 40%;
