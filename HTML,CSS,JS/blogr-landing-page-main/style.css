@@ -15,7 +15,13 @@ nav .d-flex li{
     border:none;
 }
 nav .d-flex li :hover{
-    border-radius: 8px;
+    border-radius: 28px;
     border:1px solid black;
 }
-#
+
+@media screen and (max-width:990px){
+    nav .d-flex{
+        width: 100%;
+        margin-left: 0 !important;
+    }   
+}
