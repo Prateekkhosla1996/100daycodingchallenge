@@ -15,3 +15,5 @@ function findSecondMax(arr){
    return smax
 }
 console.log(findSecondMax(arr))
+
+// recursion
