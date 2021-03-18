@@ -3,11 +3,21 @@ nav ul{
 }
 nav .d-flex{
     width: 40%;
+    margin-top: 0.2rem !important;
     margin-left: 22rem !important;
 }
-nav .d-flex li{
+.login{
     /* transition :0.4s ease-in; */
-    padding: 2px 12px;
+    padding: 2px 8px 2px 28px !important;
+    border: 1px solid;
+    margin-left: 5px;
+    width: 100px;
+    justify-content: center;
+    border:none;
+}
+.signup{
+    /* transition :0.4s ease-in; */
+    padding: 2px 8px 2px 20px !important;
     border: 1px solid;
     margin-left: 5px;
     width: 100px;
