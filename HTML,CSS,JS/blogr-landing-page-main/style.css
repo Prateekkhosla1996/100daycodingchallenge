@@ -130,3 +130,44 @@ nav .d-flex li a:hover{
 }
 
 /* design_for_future_section ended */
+/* art setion started */
+#art_section::before{
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url(./images/bg-pattern-circles.svg)  no-repeat  ;
+    background-position: left ;
+    background-size:55% 230%;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(3rem);
+    overflow: hidden;
+    /* width: 50%;
+    height: 50%; */
+}
+#art_section{
+    
+    margin-top: 4rem;
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    background-color:#2d2e40;
+    z-index: -2;
+}
+#art_section .row .col img{
+    transform: translateX(6rem);
+    transform: translateY(-8rem);
+    z-index: 2;
+    
+}
+/* #art_section .row .col{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+} */
+/* art setion ended */
