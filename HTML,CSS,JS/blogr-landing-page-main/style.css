@@ -141,18 +141,17 @@ nav .d-flex li a:hover{
     background-position: left ;
     background-size:55% 230%;
     position: absolute;
-    z-index: -1;
+    z-index: -3;
     transform: translateX(3rem);
     overflow: hidden;
     /* width: 50%;
     height: 50%; */
 }
 #art_section{
-    
     margin-top: 6rem;
     position: relative;
     width: 100%;
-    height: 55vh;
+    /* height: %; */
     border-bottom-left-radius: 6rem;
     border-top-right-radius: 6rem;
     background-color:#2d2e40;
@@ -179,3 +178,17 @@ nav .d-flex li a:hover{
 }
 
 /* art setion ended */
+/* feature section started */
+#features_section{
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:#2d2e40;
+    z-index: -2; 
+}
+/* #features_section img{
+    width: 100%;
+    height: 100%;
+}  */
+/* feature section ended */
