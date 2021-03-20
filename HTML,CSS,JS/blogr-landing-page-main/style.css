@@ -149,7 +149,7 @@ nav .d-flex li a:hover{
 }
 #art_section{
     
-    margin-top: 4rem;
+    margin-top: 6rem;
     position: relative;
     width: 100%;
     height: 55vh;
@@ -159,15 +159,23 @@ nav .d-flex li a:hover{
     z-index: -2;
 }
 #art_section .row .col img{
-    transform: translateX(6rem);
+    margin-left: 5rem;
     transform: translateY(-8rem);
     z-index: 2;
     
 }
-/* #art_section .row .col{
+ #art_section .row .col{
     align-items: center;
     justify-content: center;
     display: flex;
     height: 100%;
-} */
+    color: white;
+} 
+#art_section .row .col .container{
+    transform: translateY(6rem);
+    /* transform: translateX(-1rem); */
+    left: 0;
+    padding: 1rem;
+}
+
 /* art setion ended */
