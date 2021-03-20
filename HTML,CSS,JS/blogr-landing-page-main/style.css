@@ -2,6 +2,7 @@
 
 body{
     color: white;
+    overflow-x: hidden;
 }
 /* header started */
 nav ul{
@@ -35,8 +36,7 @@ nav .d-flex li a:hover{
     background-color: #f7b42c;
     width: 100%;
     height: 80vh;
-    /* background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
-     */
+    /* background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);*/
      background-image: linear-gradient(315deg,hsl(13, 100%, 72%) 0%,hsl(353, 100%, 62%) 74%);
     position:relative;
     border-bottom-left-radius: 6rem;
@@ -83,3 +83,50 @@ nav .d-flex li a:hover{
         margin-left: 0 !important;
     }   
 }
+/* #esign_for_future_section started */
+#design_for_future_section{
+    margin-top: 4rem;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+#design_for_future_section::before{
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url(./images/illustration-editor-desktop.svg)  no-repeat  ;
+    background-position: right bottom;
+    background-size: contain;
+    position: absolute;
+    margin-top: 4rem;
+    transform: translatex(10rem);
+    z-index: -1;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+}
+.heading h1{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+#design_for_future_section .row .col{
+    z-index: 2;
+}
+#design_for_future_section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 7rem;
+    /* padding: 1rem; */
+}
+#design_for_future_section .container p{
+    text-align: justify;
+}
+
+/* design_for_future_section ended */
