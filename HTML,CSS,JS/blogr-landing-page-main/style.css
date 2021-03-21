@@ -88,33 +88,26 @@ nav .d-flex li a:hover{
     margin-top: 4rem;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     
 }
-#design_for_future_section::before{
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: url(./images/illustration-editor-desktop.svg)  no-repeat  ;
-    background-position: right bottom;
-    background-size: contain;
-    position: absolute;
-    margin-top: 4rem;
-    transform: translatex(10rem);
-    z-index: -1;
-}
+
 .heading{
     width: 100%;
     text-align: center;
 }
+#design_for_future_section .row .col img{
+    /* transform: translateX(32rem);
+    transform: translateY(-10rem); */
+    transform: translate(25rem,-2rem);
+} 
 .heading h1{
     text-transform: capitalize;
     font-weight: 500;
 }
 #design_for_future_section .row .col{
     z-index: 2;
+    /* border: 1px solid; */
 }
 #design_for_future_section .container{
     display: flex;
@@ -122,13 +115,22 @@ nav .d-flex li a:hover{
     justify-content: center;
     flex-direction: column;
     align-self: center;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     /* padding: 1rem; */
 }
 #design_for_future_section .container p{
     text-align: justify;
 }
 
+.text{
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+
+}
 /* design_for_future_section ended */
 /* art setion started */
 #art_section::before{
@@ -151,7 +153,7 @@ nav .d-flex li a:hover{
     margin-top: 6rem;
     position: relative;
     width: 100%;
-    /* height: %; */
+    height: 100%;
     border-bottom-left-radius: 6rem;
     border-top-right-radius: 6rem;
     background-color:#2d2e40;
