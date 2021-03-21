@@ -36,7 +36,7 @@ q.enQueue(30);
 q.enQueue(40);
 q.enQueue(50);
 console.log(q.display());
-console.log(q.front);
+console.log(q.front());
 console.log(q.deQueue());
 console.log(q.display());
 console.log(q.isEmpty());
