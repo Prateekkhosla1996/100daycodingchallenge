@@ -1,16 +1,18 @@
 
-
 let x = new Promise(function(resolve,reject){
-    let count=0;
-    if(count==0){
-    resolve();
-    }else{
+    
+let randomNum = Math.random()
+console.log(randomNum)
+    if(randomNum<0.5){
+        resolve()
+    }    
+    else{
         reject()
     }
 })
 x.then(function(){
-    console.log("count is zero")
+    console.log("Resolve")
 })
 .catch(function(){
-    console.error("count is not zero")
+    console.error("Rejected")
 })
