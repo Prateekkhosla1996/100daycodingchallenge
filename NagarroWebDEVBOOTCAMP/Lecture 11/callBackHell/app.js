@@ -86,3 +86,6 @@ downloadFile('http://facebook.com/prateek.jpg')
 .then((uploadPath)=>{
     console.log(`file is uploaded at ${uploadPath}`)
 })
+.catch(()=>{
+    console.error('error')
+})
