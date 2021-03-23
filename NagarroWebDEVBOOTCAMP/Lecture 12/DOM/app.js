@@ -1,6 +1,9 @@
 const heading = document.getElementsByTagName('h1')[0];
 const para = document.getElementById('para');
 const inner = document.getElementById('inner');
+const body = document.getElementsByTagName('body')[0];
+
+body.style.backgroundColor="azure"
 heading.style.color = "red";
 heading.style.fontWeight="500"
 heading.style.textTransform="uppercase"
