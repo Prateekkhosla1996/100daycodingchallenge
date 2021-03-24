@@ -1,0 +1,17 @@
+.one{
+    border:3px solid black;
+    background-color: aqua;
+}
+.two{
+    font-weight: 800;
+    /* text-decoration: dashed; */
+    font-size: 50px;
+}
+section {
+    border: 1px solid #ccc;
+    width: 360px;
+    margin: 20px;
+}
+.third{
+    display: none;
+}

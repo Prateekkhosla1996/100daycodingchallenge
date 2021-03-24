@@ -13,7 +13,9 @@ heading.style.textAlign="center"
 para.style.textAlign="justify";
 para.style.padding="0.4rem";
 para.style.fontSize="24px";
-
+heading.classList.add('one')
+heading.classList.add('two')
+// heading.setAttribute('class','two')
 inner.innerText="this is innerText para"
 inner.innerHTML=
 `<b>bold from inner html</b>
@@ -43,3 +45,12 @@ setInterval(()=>{
     
     isTrue=!isTrue
 },1500)
+
+const sec = document.querySelector('section')
+
+sec.classList.toggle('third')
+/** three types of classList
+ * add
+ * remove
+ * toggle
+ */
