@@ -54,3 +54,13 @@ sec.classList.toggle('third')
  * remove
  * toggle
  */
+// traversing dom tree
+
+heading.parentElement
+
+heading.nextElementSibling
+
+heading.firstChild
+
+heading.children
+heading.lastChild
