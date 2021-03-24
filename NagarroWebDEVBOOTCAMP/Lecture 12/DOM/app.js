@@ -55,12 +55,10 @@ sec.classList.toggle('third')
  * toggle
  */
 // traversing dom tree
-
 heading.parentElement
-
 heading.nextElementSibling
-
 heading.firstChild
-
 heading.children
 heading.lastChild
+heading.append
+heading.prepend
