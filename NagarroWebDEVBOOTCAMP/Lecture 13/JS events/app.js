@@ -24,7 +24,12 @@ for(let btn of buttons){
         inp.value +="/";
        }
        else if(btnText=='='){
-           inp.value = eval(inp.value)
+         try{
+            inp.value = eval(inp.value)
+         }catch(err){
+            inp.value = 'Invalid Input'
+      
+         }
 
        }
        else{
