@@ -1,0 +1,36 @@
+#container{
+    /* display: block; */
+    width: 550px;
+    height: 550px;
+    margin: 30px auto;
+    border: 5px solid;
+}
+.calculator{
+    margin: 40px auto;
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid; */
+}
+table{
+    margin: 5px auto;
+}
+td{
+    width: 70px;
+    height: 60px;
+}
+button{
+    width: 100%;
+    height: 100%;
+}
+input{
+    margin-left: 3.5rem;
+    width: 320px;
+    height: 20px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
