@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 60%; */
+    /* display: flex; */
+    text-align: justify;
+    /* justify-content: center; */
+    list-style:upper-roman;
+}
+.underline{
+    text-decoration: line-through;
+    color: grey;
+}
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+.mar{
+    margin: 10px auto !important;
+}
+
+.container .row{
+    margin: 30px auto !important;
+    padding: 1rem !important;
+    text-align: center;
+} 
+#todo{
+    width: 70%;
+    
+    margin: 0px auto;
+}
+.todotext{
+    margin-top:1rem !important ;
+    padding: 0.5rem;
+}
+.rght{
+    display: flex;
+    margin-top:1rem !important ;
+    justify-content: space-between;
+}
