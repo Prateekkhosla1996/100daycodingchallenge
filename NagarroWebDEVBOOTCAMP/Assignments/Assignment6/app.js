@@ -8,9 +8,12 @@ addButton.addEventListener('click',(e)=>{
     // adding a todo
     let inp_text = inp_Add.value;
     console.log(inp_text)
-    var singleList = document.createElement('div');
+    // var singleList = document.createElement('div');
+    var singleList = document.createElement('input');
 
+    singleList.value=inp_text
     singleList.innerText = inp_text;
+    singleList.disabled=true;
     singleList.classList.add('col');
     singleList.classList.add('li');
     singleList.classList.add('col-md-8');
@@ -50,7 +53,10 @@ addButton.addEventListener('click',(e)=>{
     singleList.onclick=function(e){
         singleList.classList.toggle('underline');
     }
-
+    updateButton.onclick=function(){
+        singleList.disabled=!singleList.disabled;
+        singleList.classList.toggle('bg-white')
+    }
 })
 
 

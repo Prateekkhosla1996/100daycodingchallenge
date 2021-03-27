@@ -8,14 +8,18 @@ body{
     background-color: slategrey;
 }
 .li{
+    margin-top: 1rem !important;
+    height: 70%;
     cursor: pointer;
     font-size: 24px;
     /* width: 60%; */
     /* display: flex; */
     border:1px solid transparent;
+    background-color: #264653;
     text-align: left;
     /* justify-content: center; */
     list-style:upper-roman;
+    color: wheat;
 }
 .underline{
     text-decoration: line-through;
@@ -60,4 +64,8 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
+  .bg-white{
+      background-color: white;
+      color: black;
+  }
