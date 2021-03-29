@@ -28,11 +28,19 @@ console.log($('input[type="text"]').attr("type"));
 $('h1').addClass('h1')
 // $('h1').removeClass('h1')
 let count = 0;
-$('button').click(()=>{
+$('#button1').click(function(){
+   console.log($(this).text())
     count++;
     $('span').text(count);
 })
-
+$('#onClickDec').on('click',function(){
+    $('div').slideToggle(2000,()=>{
+        console.log('fade toggle')
+    });
+    count--;
+    $('span').text(count);
+    // console.log($(this).text());
+})
 // keyboard events
 
 $('input[type="text"]').keypress((e)=>{
@@ -43,3 +51,18 @@ $('input[type="text"]').keypress((e)=>{
 })
 
 
+
+// $('div').on('click',function(){
+//     $(this).toggleClass('gold')
+// })
+
+
+$('div').on('mouseenter',function(){
+    $(this).css('background','gold')
+})
+$('div').on('mouseleave',function(){
+    $(this).css('background','yellow')
+})
+// effects
+
+$('div').fadeIn()

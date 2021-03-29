@@ -4,3 +4,15 @@
     color: brown;
     background-color: antiquewhite;
 }
+section{
+    display: flex;
+
+}
+div{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.gold{
+    background-color: gold;
+}
