@@ -50,7 +50,7 @@ addButton.addEventListener('click',(e)=>{
         updateButton.remove()
     }
     // marking a task as complete
-    singleList.onclick=function(e){
+    singleList.ondblclick=function(e){
         singleList.classList.toggle('underline');
     }
     updateButton.onclick=function(){
