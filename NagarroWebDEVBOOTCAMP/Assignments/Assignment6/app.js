@@ -34,6 +34,8 @@ addButton.addEventListener('click',(e)=>{
     updateButton.classList.add('btn');
     updateButton.classList.add('btn-warning');
     updateButton.classList.add('btn-md');
+    
+   
     rightDiv.classList.add('col');
     rightDiv.classList.add('rght');
     rightDiv.classList.add('col-md-4');
@@ -41,7 +43,7 @@ addButton.addEventListener('click',(e)=>{
     rightDiv.appendChild(updateButton);
     inp_Add.value="";
     // deleting a child
-    deleteButton.onclick=function(){
+    deleteButton.onclick = function(){
         list.removeChild(singleList)
         rightDiv.classList.remove('col')
         rightDiv.classList.remove('col-md-4')
@@ -50,13 +52,15 @@ addButton.addEventListener('click',(e)=>{
         updateButton.remove()
     }
     // marking a task as complete
-    singleList.ondblclick=function(e){
+    singleList.ondblclick = function(e){
         singleList.classList.toggle('underline');
     }
-    updateButton.onclick=function(){
+    //  
+    updateButton.onclick = function(){
         singleList.disabled=!singleList.disabled;
         singleList.classList.toggle('bg-white')
     }
+
 })
 
 
