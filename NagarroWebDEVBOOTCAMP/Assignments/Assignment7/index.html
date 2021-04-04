@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+   <section id="weather_section">
+    
+    <div class="container inner__container text-center justify-center shadow-lg">
+        <h1 class="p-2">WEATHER APP</h1>
+        <br>
+        <div class="row ">
+            <div class="col-col-md-12 col-sm-12">
+                <input type="text" placeholder="Enter city" id="city">
+                <button class="btn btn-warning btn-md" id="submitBtn">Search</button>
+            </div>
+            <div class="row d-flex justify-center">
+                <div class="col col-md-12 col-sm-12 text-center">
+                    <h2 id="cityName" class="p-2">New Delhi</h2>
+                    <h5 id="day" class="p-2">Wednesdy 31 march 2020</h5>
+                    <h1 ><span id="temprature">15</span> &#176;c</h1>
+                    <h3 id="weather_main" class="p-2">Haze</h3>
+                    <h4><span id="min_temp" class="p-2">13 </span>&#176;c/ <span id="max_temp">16 </span>&#176;c</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   </section>
+</div>
+    <script src="./app.js"></script>
+</body>
+</html>
