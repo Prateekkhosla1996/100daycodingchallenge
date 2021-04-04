@@ -25,13 +25,16 @@ input{
     border: none;
     border-bottom: 2px solid black;
     padding: 5px !important;
+    color: white;
 }
 ::placeholder{
     color: white;
 }
 input:focus{
     outline: none;
+    background-color: transparent;
 }
+
 
 @media screen and (max-width:400px){
     #weather_section {
@@ -42,5 +45,5 @@ input:focus{
         height: 80vh;
         width: 100%;
       }
-      
+
 }
