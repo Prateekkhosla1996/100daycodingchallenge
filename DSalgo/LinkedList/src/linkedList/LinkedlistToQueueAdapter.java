@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
 
   public static class LLToQueueAdapter {
     LinkedList<Integer> list;
@@ -37,8 +36,7 @@ public class Main {
       // write your code here
       return list.getFirst();
     }
-  }
-
+  
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     LLToQueueAdapter qu = new LLToQueueAdapter();

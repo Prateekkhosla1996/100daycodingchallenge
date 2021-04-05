@@ -1,12 +1,13 @@
+package linkedList;
+
 import java.io.*;
 import java.util.*;
+import java.util.LinkedList;
 
-public class Main {
-
-  public static class LLToStackAdapter {
+  public class LinkedlistToStackAdapter {
     LinkedList<Integer> list;
 
-    public LLToStackAdapter() {
+    public LinkedlistToStackAdapter() {
       list = new LinkedList<>();
     }
 
@@ -30,11 +31,10 @@ public class Main {
       // write your code here
       return list.getFirst();
     }
-  }
-
+  
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    LLToStackAdapter st = new LLToStackAdapter();
+    LinkedlistToStackAdapter st = new LinkedlistToStackAdapter();
 
     String str = br.readLine();
     while(str.equals("quit") == false){
