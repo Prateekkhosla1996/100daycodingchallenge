@@ -12,6 +12,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: sans-serif;
 }
 .inner__container{
    
@@ -21,16 +22,19 @@ body {
     color: white;
 }
 input{
+    cursor: pointer;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid white;
     padding: 5px !important;
     color: white;
+    width: 40%;
 }
 ::placeholder{
     color: white;
 }
 input:focus{
+    cursor: pointer;
     outline: none;
     background-color: transparent;
 }
