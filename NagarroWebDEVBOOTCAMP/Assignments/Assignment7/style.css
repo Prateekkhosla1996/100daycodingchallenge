@@ -15,7 +15,6 @@ body {
   font-family: sans-serif;
 }
 .inner__container{
-   
     border-radius: 28px;
     z-index: 1;
     background-color: rgba(17, 138, 178,0.6);
