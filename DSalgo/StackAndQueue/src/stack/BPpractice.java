@@ -1,5 +1,5 @@
 package stack;
-import java.util.*;
+
 import java.util.Stack;
 
 public class BPpractice {

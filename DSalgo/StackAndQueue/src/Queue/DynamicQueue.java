@@ -14,12 +14,12 @@ public class DynamicQueue {
 	    }
 
 	    int size() {
-	      // write ur code here
+	      // write your code here
 	      return size;
 	    }
 
 	    void display() {
-	      // write ur code here
+	      // write your code here
 	      for(int i = 0; i < size; i++){
 	        int idx = (front + i) % data.length;
 	        System.out.print(data[idx] + " ");
@@ -29,7 +29,7 @@ public class DynamicQueue {
 
 	    // change this code
 	    void add(int val) {
-	      // write ur code here
+	      // write your code here
 	      if(size == data.length){
 	        int[] ndata = new int[2*data.length];
 	        for(int i=0;i<size;i++){
@@ -50,7 +50,7 @@ public class DynamicQueue {
 	    }
 
 	    int remove() {
-	      // write ur code here
+	      // write your code here
 	      if(size == 0){
 	        System.out.println("Queue underflow");
 	        return -1;
@@ -65,7 +65,7 @@ public class DynamicQueue {
 	    }
 
 	    int peek() {
-	       // write ur code here
+	       // write your code here
 	       if(size == 0){
 	        System.out.println("Queue underflow");
 	        return -1;

@@ -9,7 +9,7 @@ public class PrefixEvalConv {
 		Stack<String> post = new Stack<>();
 		Stack<Integer> val = new Stack<>();
 		Stack<String> in = new Stack<>();
-		Stack<Character> opts = new Stack<>();
+		
 		
 		for(int i=exp.length()-1;i>=0;i--) {
 			char ch = exp.charAt(i);
