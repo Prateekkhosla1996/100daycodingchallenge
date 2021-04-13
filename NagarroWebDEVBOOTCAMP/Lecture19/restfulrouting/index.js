@@ -38,6 +38,11 @@ app.get('/comments/:id',(req,res)=>{
     // console.log(req.body)
     res.render('show',{comment:found});
 })
+app.put('/comments/edit/:id',(req,res)=>{
+    const{id} = req.params;
+    const found = comments.find(c=>c.id===parseInt(id));
+    
+})
 app.listen(3000,()=>{
     console.log(`app is served at 3000`);
 })
