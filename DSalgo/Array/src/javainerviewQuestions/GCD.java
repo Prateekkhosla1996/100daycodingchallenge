@@ -7,6 +7,8 @@ public class GCD {
 		int a = 3;
 		int b= 7;
 		System.out.println(gcd(a,b));
+		System.out.println(elucid(a, b));
+		System.out.println(gcdOptimize(a, b));
 	}
 	
 	public static int gcd(int a,int b) {
@@ -18,5 +20,21 @@ public class GCD {
 			res--;
 		}
 		return res;
+	}
+	public static int elucid(int a,int b) {
+		while(a!=b) {
+			if(a>b) {
+				a=a-b;
+			}else {
+				b=b-a;
+			}
+		}
+		return a;
+	}
+	public static int gcdOptimize(int a,int b) {
+		if(b==0) {
+			return a;
+		}
+		return gcd(b,a%b);
 	}
 }
